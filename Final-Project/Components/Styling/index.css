@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+.main-content {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 20px 0 40px 0;
+    box-shadow: 5px 4px 10px #bbb;
+}
+
+p {
+    font-size: 16px;
+}
+
+.main-content p {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.quote-button, .button {
+    width: 125px;
+    height: 40px;
+    padding: 10px 25px;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+
+    background-color: #46bcea;
+    color: #fff;
+
+    transition: 0.3s all;
+}
+
+.quote-button:hover, .quote-button:focus, .button:hover, .button:focus {
+    background-color: #7bdaf0;
+}
+
+@media screen and (max-width: 800px) {
+    p {
+        font-size: 15px;
+    }
+}
+
+.gallery-container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.responsive {
+    float: left;
+    width: 25%;
+    padding: 0 15px;
+}
+
+.card {
+    width: 100%;
+    float: left;
+    background-color: #fff;
+    box-shadow: 5px 4px 10px #bbb;
+}
+
+.gallery {
+    padding: 30px;
+}
+
+@media only screen and (max-width: 800px) {
+    .responsive {
+        width: 50%;
+    }
+
+    .bottom-img {
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .responsive {
+        width: 100%;
+    }
+
+    .second-img {
+        margin-top: 30px;
+    }
+}
+
+.clear-fix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

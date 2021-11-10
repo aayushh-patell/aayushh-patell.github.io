@@ -1,0 +1,49 @@
+.about-content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+.gallery-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+.gallery-column {
+    flex: 50%;
+    max-width: 50%;
+}
+  
+.img-1, .img-2 {
+    vertical-align: middle;
+    width: 100%;
+    box-shadow: 5px 4px 10px #bbb;
+}
+
+.img-1 {
+    margin-right: 30px;
+}
+
+.img-2 {
+    margin-left: 30px;
+}
+
+@media screen and (max-width: 600px) {
+    .gallery-column {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .img-1 {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    .img-2 {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+}

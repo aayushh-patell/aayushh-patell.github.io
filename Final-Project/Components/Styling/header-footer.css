@@ -1,0 +1,153 @@
+nav {
+    overflow: hidden;
+    background-color: #242333;
+    padding: 0 10%;
+    height: 53px;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+}
+  
+nav .title {
+    float: left;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+nav .links {
+    float: right;
+    border-bottom: transparent solid 2px;
+    transition: border-bottom ease 0.3s;
+}
+
+nav .links:hover {
+    border-bottom: #46bcea solid 2px;
+}
+  
+nav a .title {
+    color: #fff;
+}
+  
+nav .icon {
+    display: none;
+}
+
+span {
+    color: #46bcea;
+}
+  
+@media screen and (max-width: 600px) {
+    nav a:not(:first-child) {
+        display: none;
+    }
+
+    nav a.icon {
+        float: right;
+        display: block;
+    }
+
+    nav.responsive {
+        position: relative;
+    }
+
+    nav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    nav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+/* Header & Banner */
+
+header {
+    background-color: #171620;
+    height: 85vh;
+    width: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    bottom: 630px;
+}
+
+.mask {
+    opacity: 0;
+    bottom: 0px;
+    height: calc(85vh - 53px);
+    width: 100%;
+    position: relative;
+}
+
+h1 {
+    font-size: 62px;
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: calc(80vh - 36%);
+    color: #fff;
+}
+
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 60px;
+        margin-top: 24%;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 48px;
+        margin-top: 32%;
+    }
+}
+
+/* Footer */
+
+footer {
+    overflow: hidden;
+    background-color: #242333;
+    padding: 0 10%;
+    height: 53px;
+}
+
+footer a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+footer .website-name {
+    float: left;
+    text-transform: uppercase;
+}
+
+footer .copyright {
+    float: right;
+}
+
+@media screen and (max-width: 600px) {
+    footer p {
+        font-size: 15px;
+    }
+}
