@@ -1,10 +1,8 @@
-@charset "utf-8";
-
 .flex-container-contact {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -118,6 +116,8 @@ input[type="submit"] {
     cursor: pointer;
     border: none;
     transition: background-color 0.2s ease;
+    position: relative;
+    top: 3px;
 }
 
 input[type="submit"]:hover {
@@ -125,7 +125,7 @@ input[type="submit"]:hover {
 }
 
 .socials {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     box-shadow: 5px 4px 10px #bbb;
 }
@@ -156,4 +156,15 @@ input[type="submit"]:hover {
 .icon-bar i:hover, .icon-bar i:focus {
     color: #46cbea;
     border: #46cbea solid 1px;
+    animation: bounce 0.8s infinite alternate;
+}
+
+@keyframes bounce { 
+    0% { 
+        transform: translateY(0); 
+    } 
+    
+    100% { 
+        transform: translateY(-10px); 
+    } 
 }

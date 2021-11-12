@@ -3,7 +3,7 @@
 }
 
 .main-content {
-    width: 80%;
+    width: 90%;
     margin: auto;
     text-align: center;
     padding: 20px 0 40px 0;
@@ -48,15 +48,19 @@ p {
 }
 
 .gallery-container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
+}
+
+.gallery-container h3 {
+    float: left;
 }
 
 .responsive {
     float: left;
     width: 25%;
-    padding: 0 15px;
+    padding: 0;
 }
 
 .card {
@@ -70,13 +74,41 @@ p {
     padding: 30px;
 }
 
-@media only screen and (max-width: 800px) {
+.column-1 {
+    padding: 0 15px 0 0;
+}
+
+.column-2, .column-3 {
+    padding: 0 15px;
+}
+
+.column-4 {
+    padding: 0 0 0 15px;
+}
+
+@media only screen and (max-width: 1400px) {
     .responsive {
         width: 50%;
     }
 
     .bottom-img {
         margin-top: 30px;
+    }
+
+    .column-1 {
+        padding: 0 15px 0 0;
+    }
+
+    .column-2 {
+        padding: 0 0 0 15px;
+    }
+
+    .column-3 {
+        padding: 0 15px 0 0;
+    }
+
+    .column-4 {
+        padding: 0 0 0 15px;
     }
 }
 
@@ -87,6 +119,10 @@ p {
 
     .second-img {
         margin-top: 30px;
+    }
+
+    .column-1, .column-2, .column-3, .column-4 {
+        padding: 0;
     }
 }
 
