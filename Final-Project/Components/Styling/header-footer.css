@@ -82,10 +82,12 @@ header {
 }
 
 .container {
+    padding: 0 15px;
+    max-width: 1140px;
     margin: 0 auto;
-    text-align: center;
-    position: relative;
-    bottom: 630px;
+    height: calc(100% - 53px);
+    align-items: center;
+    display: flex;
 }
 
 .mask {
@@ -99,16 +101,12 @@ header {
 h1 {
     font-size: 62px;
     text-align: left;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: calc(80vh - 36%);
     color: #fff;
 }
 
 @media screen and (max-width: 800px) {
     h1 {
         font-size: 60px;
-        margin-top: 24%;
     }
 
     h2 {
@@ -119,7 +117,6 @@ h1 {
 @media screen and (max-width: 600px) {
     h1 {
         font-size: 48px;
-        margin-top: 32%;
     }
 }
 
