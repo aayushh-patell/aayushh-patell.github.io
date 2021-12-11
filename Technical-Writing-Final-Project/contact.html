@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1">
+        <meta name = "description" content = "Website description (+ SEO)">
+        <meta name = "keywords" content = "Website keywords (+ SEO)" lang = "en">
+        <meta name = "author" content = "Aayush Patel">
+        <meta name = "robots" content = "index, follow">
+
+        <title> Aayush Patel </title>
+
+        <link rel = "shortcut icon" href = "Components/Images/logo.png" type = "image/x-icon">
+        <link rel = "stylesheet" href = "Components/Styling/base.css" media = "all">
+
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">    
+    </head>
+
+    <body>
+       <header>
+            <!-- Navigation Bar and Title -->
+            <nav>
+                <a href = "index.html" class = "title"> Aayush Patel </a>
+
+                <a href = "contact.html" class = "links active"> Contact </a>
+                <a href = "blog-intro.html" class = "links"> Blog </a>
+                <a href = "about.html" class = "links"> About </a>
+                <a href = "index.html" class = "links"> Home </a>
+
+                <!-- Hamburger Icon -->
+                <a class = "icon">
+                    <img src = "Components/Images/hamburger-menu.png">
+                </a>
+            </nav>
+
+            <!-- Hero Banner -->
+            <div class = "container">
+                <h1> I'm  <span> Aayush </span> , <br> Come Drop Me a Message </h1>
+            </div>
+        </header>
+    </body>
+
+    <br> <br> <br> <br>
+
+    <div class = "flex-container-contact">
+        <section class = "form">
+            <h2> Contact </h2>
+        
+            <form method = "POST" action = "#" name = "registration">
+                <input type = "text" name = "name" placeholder = "Name *" pattern = "^[a-zA-Z]$" required>
+                <input type = "email" name = "email" placeholder = "Email *" pattern = "^(?=^.{8,}$)[-_A-Za-z0-9]+([_.-][a-zA-Z0-9]+)*@[A-Za-z0-9]+([.-][a-zA-Z0-9]+)*\.[A-Za-z]{2,}$" required>
+                    
+                <textarea name = "message" placeholder = "Message" maxlength = "10" required> </textarea>
+                
+                <input type = "submit" value = "Submit">
+            </form>
+        </section>
+
+        <section class = "map">
+            <h2> Visit Me </h2>
+
+            <br>
+                
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2576.119046604581!2d-97.1996137488092!3d49.7838261792877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52c1dfed38d85e51%3A0xad3618177fa514e1!2s774%20Bridge%20Lake%20Dr%2C%20Winnipeg%2C%20MB%20R3Y%201S4!5e0!3m2!1sen!2sca!4v1636330809310!5m2!1sen!2sca"></iframe>
+        </section>
+    </div>
+
+    <br> <br> <br> <br>
+
+    <section class = "socials">
+        <h2> Socials </h2>
+
+        <div class = "icon-bar">
+            <a> <i class = "fab fa-twitter"> </i> </a>
+            <a> <i class = "fab fa-facebook"> </i> </a>
+            <a> <i class = "fab fa-linkedin"> </i> </a>
+        </div>
+    </section>
+
+    <br> <br> <br> <br>
+
+    <footer>
+        <a href = "#" class = "website-name"> Aayush Patel </a>
+        <a href = "#" class = "copyright"> &copy My Portfolio 2021 </a>
+    </footer>
+</html>
