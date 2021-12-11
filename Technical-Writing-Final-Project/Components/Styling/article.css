@@ -10,3 +10,17 @@ h3 {
 .aligned {
     text-align: right;
 }
+
+table {
+    margin: 0 auto;
+}
+
+td {
+    padding: 10px 15px;
+    border: solid 1px #000;
+}
+
+th {
+    padding: 10px 15px;
+    border: solid 1px #000;
+}
