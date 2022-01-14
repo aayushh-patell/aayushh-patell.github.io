@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+header {
+    background-color: lightgray;
+}
+
+header nav {
+    width: 80%;
+    margin: 0 auto;
+    height: 50px;
+    display: flex;
+}
+
+header nav a {
+    padding: 15px;
+}
+
+header nav a:first-child {
+    padding-left: 0;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+main input {
+    width: inherit;
+}
+
+#c, #f {
+    width: 200px;
+    height: 25px;
+    border: 1px gray solid;
+    border-radius: 5px;
+}
+
+#c-out, #f-out {
+    width: 200px;
+    height: 25px;
+    background-color: lightgray;
+    border: 1px gray solid;
+    border-radius: 5px;
+    position: relative;
+    bottom: 50px;
+}
+
+#cTof, #fToc {
+    width: 100px;
+    height: 29px;
+    background-color: lightgray;
+    border: 1px gray solid;
+    border-radius: 5px;
+    position: relative;
+    bottom: 45px;
+    left: 225px;
+}
+
+#themeToggle {
+    width: 150px;
+    height: 35px;
+    position: fixed;
+    bottom: 140px;
+    left: 10%;
+    background-color: lightgray;
+    border: 1px gray solid;
+    border-radius: 5px;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <script src = "Components/Scripts/convert.js"> </script>
+        <link type = "text/css" rel = "stylesheet" media = "all" href = "Components/Styling/base.css" id = "default"/>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <a> Home </a>
+                <a> About </a>
+                <a> Contact </a>
+            </nav>
+        </header>
+
+        <br> <br>
+
+        <main>
+            <section id = "convertor-1">
+                <h3> Celsius to Fahrenheit </h3>
+                <p> <input id = "c"> </p>
+                <button id = "cTof" onclick = "convertCtoF('C')"> Convert </button>
+                <p> <input id = "c-out"> </p> 
+            </section>
+
+            <br>
+
+            <section id = "convertor-2">
+                <h3> Fahrenheit to Celsius </h3>
+                <p> <input id = "f"> </p>
+                <button id = "fToc" onclick = "convertFtoC('F')"> Convert </button>
+                <p> <input id = "f-out"> </p>
+            </section>
+        </main>
+
+        <button id = "themeToggle" onclick = themeChange()> Change Theme </button>
+    </body>
+</html>

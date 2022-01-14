@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    background-color: rgb(170, 170, 170);
+}
+
+header {
+    background-color: rgb(107, 107, 107);
+    color: white;
+}
+
+header nav {
+    width: 80%;
+    margin: 0 auto;
+    height: 50px;
+    display: flex;
+}
+
+header nav a {
+    padding: 15px;
+}
+
+header nav a:first-child {
+    padding-left: 0;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+main input {
+    width: inherit;
+}
+
+#c, #f {
+    width: 200px;
+    height: 25px;
+    border: 1px gray solid;
+    border-radius: 5px;
+    background-color: lightgray;
+}
+
+#c-out, #f-out {
+    width: 200px;
+    height: 25px;
+    background-color: rgb(122, 122, 122);
+    border: 1px rgb(100, 100, 100) solid;
+    border-radius: 5px;
+    position: relative;
+    bottom: 50px;
+}
+
+#cTof, #fToc {
+    width: 100px;
+    height: 29px;
+    background-color: rgb(122, 122, 122);
+    border: 1px rgb(100, 100, 100) solid;
+    border-radius: 5px;
+    position: relative;
+    bottom: 45px;
+    left: 225px;
+}
+
+#themeToggle {
+    width: 150px;
+    height: 35px;
+    position: fixed;
+    bottom: 140px;
+    left: 10%;
+    background-color: rgb(122, 122, 122);
+    border: 1px rgb(100, 100, 100) solid;
+    border-radius: 5px;
+}
