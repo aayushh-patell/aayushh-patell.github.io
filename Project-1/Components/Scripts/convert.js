@@ -21,9 +21,9 @@ function themeChange() {
 
     if (count % 2 == 0) {
         let link = document.getElementById("default");
-        link.href = "Components/Styling/dark.css";
+        link.href = "Components/Styling/base.css";
     } else {
         let link = document.getElementById("default");
-        link.href = "Components/Styling/base.css";
+        link.href = "Components/Styling/dark.css";
     }
 }
