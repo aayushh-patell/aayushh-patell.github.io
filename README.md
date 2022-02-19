@@ -9,12 +9,16 @@ Intro to Web Development
 
 - [Final Project] (https://aayushh-patell.github.io/Final-Project/index.html)
 
+
+
 JavaScript Basics
 
 - [Project-1] (https://aayushh-patell.github.io/JavaScript-Basics/Project-1/index.html)
 - [Project-2] (https://aayushh-patell.github.io/JavaScript-Basics/Project-2/index.html)
 
 - [Final-Project] (https://aayushh-patell.github.io/JavaScript-Basics/Final-Project/index.html)
+
+
 
 Technical Writing
 
