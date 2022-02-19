@@ -21,3 +21,8 @@ JavaScript Basics
 Technical Writing
 
 - [Final-Project] (https://aayushh-patell.github.io/Technical-Writing/Technical-Writing-Final-Project/index.html)
+
+Object Oriented JavaScript
+
+- [Project 1] ()
+- [Project 2] ()
