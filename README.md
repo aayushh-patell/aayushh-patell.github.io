@@ -18,12 +18,17 @@ JavaScript Basics
 
 - [Final-Project] (https://aayushh-patell.github.io/JavaScript-Basics/Final-Project/index.html)
 
+<br>
 
 Technical Writing
 
 - [Final-Project] (https://aayushh-patell.github.io/Technical-Writing/Technical-Writing-Final-Project/index.html)
 
+<br>
+
 Object Oriented JavaScript
 
 - [Project 1] ()
 - [Project 2] ()
+
+<br>
