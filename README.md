@@ -9,6 +9,7 @@ Intro to Web Development
 
 - [Final Project] (https://aayushh-patell.github.io/Final-Project/index.html)
 
+<br>
 
 JavaScript Basics
 
