@@ -28,7 +28,6 @@ Technical Writing
 
 Object Oriented JavaScript
 
-- [Project 1] ()
-- [Project 2] ()
+- [Project 1] (https://aayushh-patell.github.io/Object-Oriented-JavaScript/Tic-Tac-Toe/index.html)
 
 <br>
