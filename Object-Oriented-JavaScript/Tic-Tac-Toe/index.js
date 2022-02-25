@@ -19,6 +19,8 @@ window.addEventListener('DOMContentLoaded', () => {
 	let pointsX = 0;
 	let pointsO = 0;
 
+	let count = 0;
+
 	// Reset Button Audio
 	const alarmAudio = document.getElementById("alarm-audio");
 	alarmAudio.src = "http://soundbible.com/grab.php?id=1540&type=mp3";
@@ -104,9 +106,13 @@ window.addEventListener('DOMContentLoaded', () => {
 		board[index] = currentPlayer;
 	}
 
-	// Player Change
+	// Player Change (If Count is Even, Player X Plays, Otherwise Player O does)
 	const changePlayer = () => {
-		currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+		if (count%2 == 0) {
+			currentPlayer = 'X';
+		} else {
+			currentPlayer = 'O';
+		}
 	}
 
 	const userAction = (tile, index) => {
@@ -115,6 +121,7 @@ window.addEventListener('DOMContentLoaded', () => {
 			tile.classList.add(`player${currentPlayer}`);
 			updateBoard(index);
 			handleResultValidation();
+			count++
 			changePlayer();
 		}
 	}
