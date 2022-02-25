@@ -106,10 +106,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 	// Player Change
 	const changePlayer = () => {
-		playerDisplay.classList.remove(`player${currentPlayer}`);
 		currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
-		playerDisplay.innerText = currentPlayer;
-		playerDisplay.classList.add(`player${currentPlayer}`);
 	}
 
 	const userAction = (tile, index) => {
