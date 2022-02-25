@@ -4,10 +4,14 @@ window.addEventListener('DOMContentLoaded', () => {
 	const resetButton = document.querySelector('#reset');
 	const announcer = document.querySelector('.announcer');
 
+	// 9 Board Spaces
 	let board = ['', '', '', '', '', '', '', '', ''];
+
+	// X Starts the Game
 	let currentPlayer = 'X';
 	let isGameActive = true;
 
+	// Game Conclusion Variables
 	const PLAYERX_WON = 'PLAYERX_WON';
 	const PLAYERO_WON = 'PLAYERO_WON';
 	const TIE = 'TIE';
