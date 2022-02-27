@@ -5,7 +5,7 @@
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
 
         <link rel = "stylesheet" href = "style.css">
-        <script src = "./index.js"></script>
+        <script src = "./index.js" defer></script>
 
         <title>Tic Tac Toe</title>
     </head>
@@ -16,11 +16,11 @@
 
         <main id = "main">
             <div class = "point-container-X">
-                <p> Player X: <span id = "point-counter-X">0</span> Points </p>
+                <p> Player X: <span id = "point-counter-X" class = "display-player playerX">0</span> Point(s) </p>
             </div>
 
             <div class = "point-container-O"> 
-                <p> Player O: <span id = "point-counter-O">0</span> Points </p>
+                <p> Player O: <span id = "point-counter-O">0</span> Point(s) </p>
             </div>
 
             <section class = "title">
@@ -31,9 +31,9 @@
                 <p id = "introduction"> Player "X" Starts </p>
             </section>
 
-            <section class = "display" style = "display: none">
+            <!-- <section class = "display" style = "display: none">
                 Player <span class = "display-player playerX">X</span>'s turn
-            </section>
+            </section> -->
 
             <section class = "container">
                 <div class = "tile"></div>
