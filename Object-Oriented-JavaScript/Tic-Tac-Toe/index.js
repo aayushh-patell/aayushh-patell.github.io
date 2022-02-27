@@ -2,11 +2,13 @@ const tiles = Array.from(document.querySelectorAll('.tile'));
 const resetButton = document.querySelector('#reset');
 const announcer = document.querySelector('.announcer');
 
-// 9 Board Spaces
+// 9 Board Spaces (Holds the X / O Board Values)
 let board = ['', '', '', '', '', '', '', '', ''];
 
 // X Starts the Game
 let currentPlayer = 'X';
+
+// Boolean to indicate Game Status
 let isGameActive = true;
 
 // Game Conclusion Variables
@@ -31,6 +33,7 @@ backgroundAudio.src = "background.mp3";
 backgroundAudio.volume = 0.5;
 backgroundAudio.load();
 
+// Array index configurations which will lead to a victory
 const winningConditions = [
 	[0, 1, 2],
 	[3, 4, 5],
@@ -45,22 +48,26 @@ const winningConditions = [
 function handleResultValidation() {
 	let roundWon = false;
 
+	// Loops through winningConditions array 
 	for (let i = 0; i <= 7; i++) {
 		const winCondition = winningConditions[i];
 		const a = board[winCondition[0]];
 		const b = board[winCondition[1]];
 		const c = board[winCondition[2]];
 
+		// If there are any empty fields, repeat
 		if (a === '' || b === '' || c === '') {
 			continue;
 		}
-
+		
+		// If all fields are equal, there's a winner
 		if (a === b && b === c) {
 			roundWon = true;
 			break;
 		}
 	}
 
+	// If Player "X" is active upon the roundWon condition turning true, they win
 	if (roundWon) {
 		if (currentPlayer === 'X')
 			announce(PLAYERX_WON);
@@ -71,6 +78,7 @@ function handleResultValidation() {
 		return;
 	}
 
+	// Tie Condition
 	if (!board.includes(''))
 		announce(TIE);
 }
@@ -92,6 +100,7 @@ const announce = (type) => {
 			announcer.innerText = 'Tie';
 	}
 
+	// Shows the banner with winning player
 	announcer.classList.remove('hide');
 };
 
@@ -104,6 +113,7 @@ const isValidAction = (tile) => {
 	return true;
 };
 
+// Receives an index parameter to set the corresponding array element
 const updateBoard =  (index) => {
 	board[index] = currentPlayer;
 }
