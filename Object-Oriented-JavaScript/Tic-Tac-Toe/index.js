@@ -48,7 +48,7 @@ const winningConditions = [
 function handleResultValidation() {
 	let roundWon = false;
 
-	// Loops through winningConditions array 
+	// Loops through winningConditions array (Researched)
 	for (let i = 0; i <= 7; i++) {
 		const winCondition = winningConditions[i];
 		const a = board[winCondition[0]];
