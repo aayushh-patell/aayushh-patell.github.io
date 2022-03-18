@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+    <head lang = "en"> 
+        <meta charset = "utf-8">
+        <meta content = "width=device-width, initial-scale=1" name = "viewport">
+
+        <link rel = "stylesheet" href = "Styling/base.css">
+
+        <script src="Scripts/base.js" defer></script>
+    </head>
+
+    <body> 
+        <div id="app">
+            <div id="current-time">00:00:00 AM</div>
+
+            <br>
+
+            <div class="create-alarm">
+
+                <div style = "font-size: 24px;" >--:--:--</div>
+
+                <br> <br>
+
+                <div class="form-actions">
+                    <form>
+                        <div class="alarm-inputs">
+                            <input 
+                                class = "alarm-input"
+                                type="number"
+                                name="hour"
+                                placeholder="Enter Hours"
+                                min="0"
+                                max="12"
+                                required
+                            />
+
+                            <input
+                                class = "alarm-input"
+                                type="number"
+                                name="min"
+                                min="0"
+                                max="59"
+                                placeholder="Enter Minutes"
+                                required
+                            />
+
+                            <select name = "zone" class = "alarm-input" style = "height: 52px" required>
+                                <option value = "" selected disabled> AM / PM </option>
+                                <option value = "AM"> AM </option>
+                                <option value = "PM"> PM </option>
+                            </select>
+                        </div>
+
+                        <button class = "submit" > Set Alarm </button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="active-alarm">
+            <div id="alarm-text"></div>
+            <button id="clear-alarm">Clear Alarm</button>
+        </div>
+
+        <audio id="alarm-audio"></audio>
+    </body>
+</html>
