@@ -11,3 +11,5 @@
 - Temperature Converter (https://aayushh-patell.github.io/Temperature-Converter/index.html)
 
 - Tic-Tac-Toe (https://aayushh-patell.github.io/Tic-Tac-Toe/index.html)
+
+- Tic-Tac-Toe w/ Leaderboard (https://aayushh-patell.github.io/Assignment-2/index.html)
