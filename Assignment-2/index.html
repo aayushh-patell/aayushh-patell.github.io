@@ -1,0 +1,80 @@
+<html lang = "en" id = "html">
+    <head>
+        <meta charset = "UTF-8">
+        <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+
+        <link rel = "stylesheet" href = "style.css">
+        <script src = "index.js" defer></script>
+
+        <title>Tic Tac Toe</title>
+    </head>
+
+    <body>
+
+        <button id = "start"> Start </button>
+
+        <main id = "main">
+            <div class = "point-container-X">
+                <p> Player 'X': <span id = "point-counter-X" class = "display-player playerX">0</span> Point(s) </p>
+            </div>
+
+            <div class = "point-container-O"> 
+                <p> Player 'O': <span id = "point-counter-O">0</span> Point(s) </p>
+            </div>
+
+            <section class = "title">
+                <h1>Tic Tac Toe</h1>
+            </section>
+
+            <section>
+                <p id = "introduction"> Player "X" Starts </p>
+            </section>
+
+            <!-- <section class = "display" style = "display: none">
+                Player <span class = "display-player playerX">X</span>'s turn
+            </section> -->
+
+            <section class = "container">
+                <div class = "tile"></div>
+                <div class = "tile"></div>
+                <div class = "tile"></div>
+                <div class = "tile"></div>
+                <div class = "tile"></div>
+                <div class = "tile"></div>
+                <div class = "tile"></div>
+                <div class = "tile"></div>
+                <div class = "tile"></div>
+            </section>
+
+            <section class = "controls">
+                <section class = "display announcer hide"></section>
+            </section>
+
+            <section class = "controls">
+                <button id = "reset">Reset Board</button>
+                <button id = "end-game">New Game</button>
+            </section>
+        </main>
+
+        <section class = "leaderboard" id = "leaderboard">
+            <h2>Leaderboard</h2>
+            <br>
+            <table>
+                <tr>
+                    <th>Rank</th>
+                    <th>Points</th>
+                </tr>
+
+                <br>
+
+                <tbody id = "points">
+
+                </tbody>
+            </table>
+        <section>
+
+        <audio id = "alarm-audio"></audio>
+        <audio id = "background-audio"></audio>
+    </body>
+</html>

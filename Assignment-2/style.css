@@ -1,0 +1,179 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Helvetica', sans-serif;
+    background-color: #142c38;
+    color: #fff;
+}
+
+body {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#start {
+    width: 100px;
+    height: 50px;
+    color: #fff;
+    border: none;
+    background-color: #1b4255;
+    border-radius: 8px;
+    font-size: 20px;
+    transition: all 0.5s ease;
+}
+
+#start:hover {
+    background-color: #1b4255bb;
+}
+
+#main {
+    width: 100%;
+    display: none;
+}
+
+p {
+    color: #fff;
+    text-align: center;
+    margin: 20px 0 30px 0;
+}
+
+.background {
+    height: 100vh;
+    padding-top: 1px;
+}
+
+.title {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+
+.hide {
+    display: none;
+}
+
+.container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    max-width: 300px;
+
+}
+
+.tile {
+    border: 1px solid white;
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.tile:hover {
+    background-color: #1b4255bb;
+}
+
+.playerX {
+    color: #c33e09;
+}
+
+.playerO {
+    color: #09C372;
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.controls button {
+    color: white;
+    border-radius: 8px;
+    padding: 14px;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    font-size: 20px;
+}
+
+#reset, #end-game {
+    background-color: #1b4255;
+    transition: all 0.5s ease;
+    margin: 0 10px;
+}
+
+#reset:hover, #end-game:hover {
+    background-color: #1b4255bb;
+}
+
+#point-counter-X, #point-counter-X {
+    color: #fff;
+    text-align: center;
+}
+
+.point-container-X, .point-container-O {
+    width: 200px;
+    height: 50px;
+    text-align: center;
+}
+
+.point-container-X p, .point-container-O p {
+    font-size: 20px;
+}
+
+.point-container-X {
+    position: fixed;
+    top: 25px;
+    left: 50px;
+}
+
+.point-container-O {
+    position: fixed;
+    top: 25px;
+    right: 50px;
+}
+
+.announcer {
+    color: #fff;
+    text-align: center;
+}
+
+#leaderboard {
+    display: none;
+    position: fixed;
+    width: 300px;
+    background-color: #1b4255;
+    border-radius: 8px;
+    right: 50px;
+    bottom: 25px;
+    padding: 14px;
+    color: #fff;
+}
+
+table, #leaderboard h2 {
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 400;
+}
+
+table {
+    width: 100%;
+}
+
+table, thead, tbody, tr, th, #leaderboard h2 {
+    background-color: #1b4255;
+}
+
+thead th {
+    width: 50%;
+    font-weight: 400;
+}
